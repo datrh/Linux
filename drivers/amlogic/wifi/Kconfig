@@ -22,6 +22,10 @@ config AM_WIFI_USB
 	depends on AM_WIFI
 	default n
 
+source "drivers/amlogic/wifi/broadcom/broadcm_40181/Kconfig"
+source "drivers/amlogic/wifi/broadcom/bcmdhd_1_141_xx/Kconfig"
+source "drivers/amlogic/wifi/broadcom/broadcm_4354/Kconfig
+
 source "drivers/amlogic/wifi/rtl8189ES/Kconfig"
 source "drivers/amlogic/wifi/rtl8192EU/Kconfig"
 source "drivers/amlogic/wifi/rtl8723AU/Kconfig"
@@ -31,6 +35,5 @@ source "drivers/amlogic/wifi/rtl8812AU/Kconfig"
 source "drivers/amlogic/wifi/rtl8xxx_CU/Kconfig"
 source "drivers/amlogic/wifi/rtl8xxx_DU/Kconfig"
 source "drivers/amlogic/wifi/rtl8xxx_EU/Kconfig"
-source "drivers/amlogic/wifi/bcmdhd/Kconfig"
 
 endif # AM_WIFI

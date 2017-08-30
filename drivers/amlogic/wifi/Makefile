@@ -2,6 +2,11 @@ obj-$(CONFIG_AM_WIFI_SD_MMC) +=  wifi_dt.o
 obj-$(CONFIG_AM_WIFI_DUMMY) += wifi_dummy.o
 obj-$(CONFIG_AM_WIFI) += wifi_power.o
 obj-$(CONFIG_DHD_USE_STATIC_BUF) += dhd_static_buf.o
+
+obj-$(CONFIG_SDIO_DHD_CDC_WIFI_40181_MODULE) += broadcom/broadcm_40181/
+obj-$(CONFIG_BCMDHD_141_AMPAK) += broadcom/bcmdhd_1_141_xx/
+obj-$(CONFIG_BCMDHD_4354_AMPAK) += broadcom/broadcm_4354/
+
 obj-$(CONFIG_RTL8189ES) += rtl8189ES/
 obj-$(CONFIG_RTL8192EU) += rtl8192EU/
 obj-$(CONFIG_RTL8723AU) += rtl8723AU/
@@ -12,4 +17,4 @@ obj-$(CONFIG_RTL8812AU) += rtl8812AU/
 obj-$(CONFIG_RTL8192CU) += rtl8xxx_CU/
 obj-$(CONFIG_RTL8192DU) += rtl8xxx_DU/
 obj-$(CONFIG_RTL8188EU) += rtl8xxx_EU/
-obj-$(CONFIG_BCMDHD) += bcmdhd/
+
